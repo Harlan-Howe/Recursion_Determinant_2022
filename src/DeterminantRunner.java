@@ -44,6 +44,11 @@ public class DeterminantRunner
         System.out.println(getDeterminant(matrix));
     }
 
+    /**
+     * Builds an n x n 2-d array with random integers in the range [-100,100)
+     * @param n size of the array
+     * @return a 2-d array of integers
+     */
     public static int[][] generateMatrix(int n)
     {
         int[][] result = new int[n][n];
@@ -53,10 +58,30 @@ public class DeterminantRunner
         return result;
     }
 
+    /**
+     * recursive method to find the determinant of the given square matrix of integers
+     * @param matrix - an n x n 2-d array of integers
+     * @return the determinant of this matrix
+     */
     public static int getDeterminant(int[][] matrix)
     {
         //TODO: you write this...
 
         return 0;
     }
+
+    /**
+     * Given an n x n 2-d array of integers, generates a n-1 x n-1 2-d array of integers by omitting the given row and
+     * column
+     * @param source the 2-d array of integers
+     * @param rowToRemove the index of the row to omit
+     * @param colToRemove the index of the column to omit
+     * @return a 2-d array of integers, based on source, without one row and column
+     */
+    public static int[][] reduceMatrix(int[][] source, int rowToRemove, int colToRemove)
+    {
+        //TODO: (optional, but highly recommended.) You write this.
+        return null; // dummy code. replace this!
+    }
+
 }
